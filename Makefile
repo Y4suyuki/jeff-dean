@@ -5,3 +5,6 @@ run:
 
 build:
 	go build -o jeff-dean
+
+install:
+	go install
