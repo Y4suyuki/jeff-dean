@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 type Memes = []string
@@ -51,7 +50,6 @@ var memes = Memes{
 }
 
 func sampleMeme(memes Memes) string {
-	rand.Seed(time.Now().UnixNano())
 	return memes[rand.Intn(len(memes))]
 }
 
